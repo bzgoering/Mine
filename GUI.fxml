@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="828.0" style="-fx-background-color: #A9A9A9;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GuiController">
+   <children>
+      <Button fx:id="PickRandButton" layoutX="30.0" layoutY="416.0" mnemonicParsing="false" onAction="#pickRandom" prefHeight="56.0" prefWidth="106.0" style="-fx-background-color: #4CAF50;" text="Pick Random" />
+      <Button fx:id="PlayButton" layoutX="30.0" layoutY="196.0" mnemonicParsing="false" onMousePressed="#buttonPlay" prefHeight="56.0" prefWidth="106.0" style="-fx-background-color: #4CAF50;" text="Play" />
+      <Text fx:id="UserMoneyTxt" layoutX="48.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$0.00" wrappingWidth="148.13671875">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="4.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bet Amount:" wrappingWidth="114.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bombs:" wrappingWidth="97.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Text fx:id="Profit" layoutX="71.0" layoutY="580.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$0.00" wrappingWidth="129.935546875">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Profit:">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="CashoutButton" layoutX="30.0" layoutY="484.0" mnemonicParsing="false" onMousePressed="#cashOut" prefHeight="56.0" prefWidth="106.0" style="-fx-background-color: #4CAF50;" text="Cashout" />
+      <Slider fx:id="BetSlider" layoutX="4.0" layoutY="98.0" onDragDetected="#confirmBetSlider" prefHeight="14.0" prefWidth="157.0" />
+      <Text fx:id="BetAmountTxt" layoutX="118.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\$0.00" wrappingWidth="114.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Slider fx:id="BombSlider" layoutX="5.0" layoutY="154.0" max="99.0" min="1.0" onDragDetected="#confirmBombSpin" prefHeight="14.0" prefWidth="157.0" />
+      <Text fx:id="BombTxt" layoutX="79.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1x" wrappingWidth="114.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="b2" layoutX="263.0" layoutY="58.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b1" layoutX="207.0" layoutY="58.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b3" layoutX="319.0" layoutY="58.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b4" layoutX="375.0" layoutY="58.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b5" layoutX="432.0" layoutY="58.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b6" layoutX="489.0" layoutY="58.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b7" layoutX="546.0" layoutY="58.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b8" layoutX="603.0" layoutY="58.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b9" layoutX="660.0" layoutY="59.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b10" layoutX="719.0" layoutY="58.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b12" layoutX="264.0" layoutY="113.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b11" layoutX="208.0" layoutY="113.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b13" layoutX="320.0" layoutY="113.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b14" layoutX="376.0" layoutY="113.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b15" layoutX="433.0" layoutY="113.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b16" layoutX="490.0" layoutY="113.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b17" layoutX="547.0" layoutY="113.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b18" layoutX="604.0" layoutY="113.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b19" layoutX="661.0" layoutY="114.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b20" layoutX="720.0" layoutY="113.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b22" layoutX="264.0" layoutY="171.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b21" layoutX="208.0" layoutY="171.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b23" layoutX="320.0" layoutY="171.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b24" layoutX="376.0" layoutY="171.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b25" layoutX="433.0" layoutY="171.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b26" layoutX="490.0" layoutY="171.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b27" layoutX="547.0" layoutY="171.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b28" layoutX="604.0" layoutY="171.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b29" layoutX="661.0" layoutY="172.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b30" layoutX="720.0" layoutY="171.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b32" layoutX="265.0" layoutY="226.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b31" layoutX="209.0" layoutY="226.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b33" layoutX="321.0" layoutY="226.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b34" layoutX="377.0" layoutY="226.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b35" layoutX="434.0" layoutY="226.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b36" layoutX="491.0" layoutY="226.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b37" layoutX="548.0" layoutY="226.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b38" layoutX="605.0" layoutY="226.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b39" layoutX="662.0" layoutY="227.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b40" layoutX="721.0" layoutY="226.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b42" layoutX="266.0" layoutY="283.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b41" layoutX="210.0" layoutY="283.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b43" layoutX="322.0" layoutY="283.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b44" layoutX="378.0" layoutY="283.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b45" layoutX="435.0" layoutY="283.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b46" layoutX="492.0" layoutY="283.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b47" layoutX="549.0" layoutY="283.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b48" layoutX="606.0" layoutY="283.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b49" layoutX="663.0" layoutY="284.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b50" layoutX="722.0" layoutY="283.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b52" layoutX="266.0" layoutY="340.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b51" layoutX="210.0" layoutY="340.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b53" layoutX="322.0" layoutY="340.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b54" layoutX="378.0" layoutY="340.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b55" layoutX="435.0" layoutY="340.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b56" layoutX="492.0" layoutY="340.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b57" layoutX="549.0" layoutY="340.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b58" layoutX="606.0" layoutY="340.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b59" layoutX="663.0" layoutY="341.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b60" layoutX="722.0" layoutY="340.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b62" layoutX="267.0" layoutY="395.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b61" layoutX="211.0" layoutY="395.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b63" layoutX="323.0" layoutY="395.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b64" layoutX="379.0" layoutY="395.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b65" layoutX="436.0" layoutY="395.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b66" layoutX="493.0" layoutY="395.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b67" layoutX="550.0" layoutY="395.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b68" layoutX="607.0" layoutY="395.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b69" layoutX="664.0" layoutY="396.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b70" layoutX="723.0" layoutY="395.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b72" layoutX="267.0" layoutY="453.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b71" layoutX="211.0" layoutY="453.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b73" layoutX="323.0" layoutY="453.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b74" layoutX="379.0" layoutY="453.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b75" layoutX="436.0" layoutY="453.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b76" layoutX="493.0" layoutY="453.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b77" layoutX="550.0" layoutY="453.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b78" layoutX="607.0" layoutY="453.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b79" layoutX="664.0" layoutY="454.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b80" layoutX="723.0" layoutY="453.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b82" layoutX="268.0" layoutY="508.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b81" layoutX="212.0" layoutY="508.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b83" layoutX="324.0" layoutY="508.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b84" layoutX="380.0" layoutY="508.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b85" layoutX="437.0" layoutY="508.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b86" layoutX="494.0" layoutY="508.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b87" layoutX="551.0" layoutY="508.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b88" layoutX="608.0" layoutY="508.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b89" layoutX="665.0" layoutY="509.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b90" layoutX="724.0" layoutY="508.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b92" layoutX="269.0" layoutY="565.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b91" layoutX="213.0" layoutY="565.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b93" layoutX="325.0" layoutY="565.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b94" layoutX="381.0" layoutY="565.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b95" layoutX="438.0" layoutY="565.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b96" layoutX="495.0" layoutY="565.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b97" layoutX="552.0" layoutY="565.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b98" layoutX="604.0" layoutY="566.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b99" layoutX="666.0" layoutY="566.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="b100" layoutX="725.0" layoutY="565.0" mnemonicParsing="false" onAction="#check" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #696969;" />
+      <Button fx:id="AdminButton" layoutX="31.0" layoutY="256.0" mnemonicParsing="false" onAction="#admin" prefHeight="56.0" prefWidth="106.0" style="-fx-background-color: #FF0000;" text="Admin" />
+      <Button fx:id="SaveButton" layoutX="762.0" layoutY="18.0" mnemonicParsing="false" onAction="#save" text="SAVE" />
+   </children>
+</Pane>
