@@ -200,6 +200,11 @@ public class GuiController
 		}
 	}
 
+	public void save()
+	{
+		saveWallet();
+	}
+	
 	//helpers
 	private void setVariables()
 	{
