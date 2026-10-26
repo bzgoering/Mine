@@ -1,18 +1,36 @@
 # Mine
-This is my recreation of the gambling game Mine from Stake.com  made using SceneBuilder JavaFX in Eclipse.
 
-About:
+My recreation of the gambling game **Mines** from Stake.com, built with JavaFX and SceneBuilder in Eclipse. Play money only.
 
-1. Players will start with 100k, this application will save data after each run in a separate encrypted file
+## Tech
+- Java 21
+- JavaFX 23 (UI built with SceneBuilder)
 
-2. The multiplier is based on how many gems there are related to bombs. This number will increase as you open more gems
+## How to run
+You need **JDK 21+** and the **[JavaFX SDK 23](https://gluonhq.com/products/javafx/)**.
 
-3. The admin button is the tool I used to debug that is passcode protected. This button reveals all bombs during ongoing gameplay and gives 1 million to the user
+**Eclipse (how it was built):** create a JavaFX project, put the files in the `application` package, and run `Main.java`.
 
-4. Buttons and sliders will be hidden during a session but will be visible again after you cashout or hit a bomb
+**Command line:**
+```bash
+# PATH_TO_FX = the lib folder of your JavaFX SDK
+javac --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml -d out *.java
+cp *.fxml out/application/ && touch out/application/application.css
+java --module-path $PATH_TO_FX --add-modules javafx.controls,javafx.fxml -cp out application.Main
+```
+The app loads an `application.css` stylesheet, which Eclipse's JavaFX template normally creates. If you don't have one, an empty file works.
 
-5. Profit will show you how much you are still down or up including your bet
+Keep `secret.key` and `Money.txt` in the folder you run from, because that's where your encrypted wallet is stored.
 
-6. you have a maximum of your total cash as a bet but going negative  will result in the application being unplayable
+## How to play
+1. Set your **bet** and the number of **bombs** with the sliders.
+2. Press **Play**, then click tiles to reveal gems. Avoid the bombs!
+3. Press **Cashout** to bank your winnings, or **Pick Random** to have a tile picked for you (bigger payout).
 
-7. exit during a game will not save any progress, but hitting a bomb or cashing out will automatically end the game and save your wallet
+## Features
+- You start with **$100k**. Your wallet is saved to an encrypted file after every cashout or bomb, or when you press **SAVE**.
+- The multiplier depends on the ratio of bombs to gems and goes up as you open more gems.
+- **Profit** shows how far up or down you are, including your bet.
+- Sliders and buttons are hidden during a round and come back after it ends.
+- **Admin** (debug tool, needs a passcode typed in the console) reveals the bombs and adds money.
+- If you quit mid-round, that round's progress isn't saved.
